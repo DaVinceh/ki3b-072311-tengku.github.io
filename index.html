@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f987ffaa4a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Tengku Muhammad Ariff</span><br></h1>
+                </div>
+            </div>
+            <!-- -------------about------------ -->
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg">
+                    </div>
+                    <div class="about-col-2"></div>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I was born and raised in eastern part of Malaysia where I grew up in Terengganu. I had my whole education in Terengganu and now I am having my bachelor in Computer Science (Internet Computing) at UniSZA, one of the top universities in Terengganu. I have been working as a freelance web developer for the last 2 years and cooperated with several startups. I don't have enough professional experience, however, I am certain that I can provide fresh take and extraordinary apporach to every project. I am keen to learn and always open to any challenges. I am willing to work in team and dedicate all my skills and talents to develop an extra-ordinary products. </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Freelance Web Developer</li>
+                        <li><span>2021-2022</span><br>Internship at Arvino Properties</li>
+                        <li><span>2016-2018</span><br>Robotics Tournament</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Universiti Sultan Zainal Abidin</li>
+                        <li><span>2019</span><br>University College TATI</li>
+                        <li><span>2014</span><br>SM Imtiaz YT Dungun</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------portfolio---------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/ABH (1).png">
+                        <div class="layer">
+                            <h3>Arvino Beauty & Health</h3>
+                            <p></p>
+                            <a href="https://tgarvinobh.wordpress.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/ABH (2).png">
+                        <div class="layer">
+                            <h3>Arvino Properties</h3>
+                            <p></p>
+                            <a href="https://tgarvinoproperties.wordpress.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/gading.png">
+                        <div class="layer">
+                            <h3>Gading Chalet</h3>
+                            <p></p>
+                            <a href="https://resort774.wordpress.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------contact-------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> tgariff20@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 0196014490</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/tengku.m.ariff.7/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/tgariff_/"><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="https://twitter.com/_tgariff"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        </div>
+                        <a href="images/CVTest.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
